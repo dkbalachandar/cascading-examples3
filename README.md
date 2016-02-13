@@ -1,4 +1,4 @@
-This is a java program to read the text file and convert the senencece from lower case to uppercase using Cascading Api.
+This is a java program to read the text file and change the letter case from lower to upper case using Cascading Api.
 
 To run this program, follow the below steps,
 
