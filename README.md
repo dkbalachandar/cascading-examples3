@@ -1,4 +1,4 @@
-This is a java program to read the text file and change the letter case from lower to upper case using Cascading Api.
+Cascading Job to read a text file and change the letter case from lower to upper case
 
 To run this program, follow the below steps,
 
@@ -8,9 +8,9 @@ To run this program, follow the below steps,
 
 3. Then login as Hadoop user and go to Hadoop directory[/usr/local/hadoop]
 
-4. Create a input text file with some sentences[inputFile.txt] and copy that file to hadoop by running the below command,
+4. Create a input text file with some sentences[input.txt] and copy that file to hadoop by running the below command,
 
-      bin/hadoop fs -copyFromLocal inputFile.txt /fc/inputFile.txt
+      bin/hadoop fs -copyFromLocal input.txt /example/input.txt
 
 5. Run the jar
-    bin/hadoop jar userLib/cascading-examples3-1.0-jar-with-dependencices.jar /fc/inputFile.txt /fc/output
+    bin/hadoop jar userLib/cascading-examples3-1.0-jar-with-dependencices.jar /example/input.txt /example/output
