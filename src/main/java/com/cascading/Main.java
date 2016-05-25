@@ -27,14 +27,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Hdfs Job is started");
-
         //input and output path
         String inputPath = args[0];
         String outputPath = args[1];
-        System.out.println("inputPath::" + inputPath);
-        System.out.println("outputPath::" + outputPath);
-
         Properties properties = new Properties();
         AppProps.setApplicationJarClass(properties, Main.class);
         //Create the source tap
@@ -47,7 +42,6 @@ public class Main {
         HadoopFlowConnector flowConnector = new HadoopFlowConnector(properties);
         Flow flow = flowConnector.connect("Hdfs Job", inTap, outTap, wordsPipe);
         flow.complete();
-        System.out.println("Hdfs Job is completed");
     }
 
     public static class UpperCaseFunction extends BaseOperation implements Function {
